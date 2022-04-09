@@ -3,7 +3,7 @@ const matchList = document.getElementById("match-list");
 
 // Search stores.json and filter it
 const searchStores = async (searchInputText) => {
-  const res = await fetch("../data/stores.json");
+  const res = await fetch("./stores.json");
   const stores = await res.json();
 
   // Get matches to current text input
